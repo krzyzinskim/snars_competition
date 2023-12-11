@@ -1,0 +1,8 @@
+Mikołaj Spytek, Mateusz Krzyziński
+https://github.com/krzyzinskim/snars_competition
+D1-K=2.csv, 14.626580715179443
+D1-UNC.csv, 43.021567821502686
+D2-K=7.csv, 20.234988927841187
+D2-UNC.csv, 45.939621925354004
+D3-K=12.csv, 28.71618938446045
+D3-UNC.csv, 18.766304969787598
