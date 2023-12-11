@@ -14,9 +14,9 @@ import networkx as nx
 
 
 # complete cosine works best
-def hierarchical_clustering(X, k, link="ward"):
+def hierarchical_clustering(X, k, link="complete"):
     print(f"Clustering with k={k}")
-    link = linkage(X, method=link, metric="euclidean")
+    link = linkage(X, method=link, metric="cosine")
     clusters = fcluster(link, k, criterion="maxclust")
     return clusters
 
@@ -59,8 +59,6 @@ def main():
     execution_times = {}
 
     for graph in graphs:
-        # if not graph.startswith("D1-U"):
-        #     continue
         time_start = measure_time()
 
         adjecency_matrix = np.loadtxt(
